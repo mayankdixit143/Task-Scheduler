@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Task scheduler</title>
+        <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+        <script src="/assets/todo-list.js"></script>
+        <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    </head>
+
+    <body>
+        <h1 >My task Scheduler</h1>
+        <div id="todo-table">
+            <form id="form1" name="form1">
+                <input type="text" name="item" placeholder="To add new item..." required/>
+                <button type="submit">Add Item</button>
+            </form>
+            <ul>
+                <% for(var i=0;i < work.length ; i++){ %>
+                    <li> <%= work[i].item %> </li>
+                <% }%> 
+            </ul>
+        </div>
+    </body>
+
+</html>
